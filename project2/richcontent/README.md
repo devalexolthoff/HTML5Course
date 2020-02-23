@@ -12,7 +12,18 @@
 
 ### Working with audio
 
-1. Preload loads what you want (metadata, all, none)
+1. Preload loads what you want (metadata, auto, none)
 2. Autoplay does what it says
 3. Controls gives you controls
 4. Height and width as well
+
+### Working with Video
+
+1. Has preload
+2. Has autoplay
+3. Loop will play the video repeatedly
+4. Has controls
+5. Has height and width
+6. Has a poster to put at the front of the video before playing
+7. MP4 is the best way to have a video
+8. IOS always has full screen video
