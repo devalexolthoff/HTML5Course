@@ -11,7 +11,8 @@
 
 <main>
     <figure>
-        <img src="images/animation.gif" alt="An animation from the conference" width="90%">
+        <!-- <img src="images/animation.gif" alt="An animation from the conference" width="90%"> -->
+        <video loop muted playsinline webkit-playsinline autoplay src="resources/animation.mp4" width="90%"></video>
         <figcaption>Images from previous conferences</figcaption>
     </figure>
     <h2>The conference in images</h2>
@@ -37,7 +38,10 @@
     added as an attribute to add the controls for the person visiting -->
     <audio src="resources/welcome.mp3" controls preload="metadata" width="30%"></audio>
     <h2>About Petra</h2>
-    <video width="100%" controls preload="metadata" src="resources/movie.mp4"></video>
+    <video width="100%" controls preload="metadata">
+        <source src="resources/movie.webm" type="video/webm">
+        <source src="resources/movie.mp4" type="video/mp4">
+    </video>
     <h2>Schedule</h2>
 
 </main>

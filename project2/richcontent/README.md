@@ -27,3 +27,6 @@
 6. Has a poster to put at the front of the video before playing
 7. MP4 is the best way to have a video
 8. IOS always has full screen video
+9. You can use a source tag inside a video tag to choose from multiple file options
+10. You can use playsinline to make a video play like a gif
+11. muted attribute automatically silences a video, which allows android phones to autplay it
