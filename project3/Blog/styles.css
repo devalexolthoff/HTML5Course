@@ -31,6 +31,7 @@ h1 {
     border-left: 4px solid 3abc49;
     padding-left: 15px;
     margin-bottom: 30px;
+    margin-left: 10px;
 }
 
 p,
@@ -48,9 +49,19 @@ article h2 {
     color: #3abc49;
 }
 
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
 nav li {
     font-size: large;
     font-weight: bold;
+    background-color: white;
+    flex-grow: 1;
+    padding: 3px;
+    margin-right: 5px;
+    text-align: center;
 }
 
 footer {
@@ -92,4 +103,10 @@ td {
     border: 1px solid red;
     padding: 5px;
     text-align: center;
+}
+
+ul,
+ol {
+    list-style: none;
+    padding-left: 0;
 }
