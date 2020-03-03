@@ -9,7 +9,10 @@ body {
 header {
     background-color: #BD0D91;
     color: white;
-    padding: 15px;
+    padding: 5%;
+    position: fixed;
+    width: 90%;
+    top: 0;
 }
 
 header img {
@@ -38,6 +41,9 @@ h3 {
     background-color: white;
     padding: 5px;
     border-bottom: 2px dashed darkred;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 120px;
 }
 h3::selection{
     background-color: green;
