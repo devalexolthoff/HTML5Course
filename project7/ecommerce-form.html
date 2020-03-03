@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name</label>
+            <input id="name" type="text" name="name">
+            <label for="phone">Phone</label>
+            <input id="phone" type="tel" name="phone">
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email">
+        </fieldset>
+        
+        <fieldset>
+            <legend>Shipping Details</legend>
+            <label for="street">Street </label>
+            <input id="street" type="text" pattern="{0-9}*" name="street">
+            <label for="streetnumber">Street Number</label>
+            <input id="streetnumber" type="number" pattern="{0-9}*" name="streetnumber">
+            <input  type="submit" value="order">
+        </fieldset>
+        
+    </form>
+</body>
+</html>

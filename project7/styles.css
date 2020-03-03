@@ -1,0 +1,19 @@
+label, input {
+    display: block;
+}
+input{
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+fieldset{
+    margin-bottom: 30px;
+    background-color: #ddd;
+}
+input[type=submit]{
+    font-size: large;
+    width: 100%;
+    padding: 15px;
+    background-color: yellow;
+    margin-top: 5px;
+}
