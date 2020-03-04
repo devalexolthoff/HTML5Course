@@ -6,6 +6,21 @@ input{
     padding: 10px;
     margin-bottom: 15px;
 }
+input:required{
+    border-right: 10px solid grey;
+}
+
+input:optional{
+    border-right: 10px solid silver;
+}
+
+input:focus:invalid{
+    border-left: 10px solid red;
+}
+input:focus:valid{
+    border-left: 10px solid green;
+}
+
 fieldset{
     margin-bottom: 30px;
     background-color: #ddd;
