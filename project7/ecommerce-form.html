@@ -48,6 +48,24 @@
             <input id="street" placeholder="Enter Your Street Name" type="text" pattern="{0-9}*" name="street">
             <label for="streetnumber">Street Number</label>
             <input id="streetnumber" placeholder="Enter Your Street Number" type="number" pattern="{0-9}*" name="streetnumber">
+            
+            <label for="city">City and State Province</label>
+            <input type="text" name="city" id="city">
+
+            <label for="country"></label>
+            <select name="country" id="country">
+                <optgroup label="Europe">
+                    <option value="fc">France</option>
+                    <option value="ir">Ireland</option>
+                    <option value="is">Iceland</option>
+                    <option value="es">Spain</option>
+                </optgroup>
+                <optgroup label="Atlantic">
+                    <option selected value="uk">United Kingdom</option>
+                    <option selected value="us">United States</option>
+               </optgroup>
+               
+            </select>
             <label for="time">Preferred Receiving Time</label>
             <input type="time" name="time" id="time">
 
