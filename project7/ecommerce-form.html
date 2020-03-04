@@ -23,21 +23,36 @@
         <fieldset>
             <legend>Wine Order</legend>
             <label for="merlot">Quantity of Merlot</label>
-            <input type="number"  min="0" max="100" pattern="{0-9}*" id="merlot" name="merlot">
+            <input type="range"  min="0" max="100" pattern="{0-9}*" id="merlot" name="merlot">
             <label for="malbec">Quantity of Malbec</label>
-            <input type="number"  min="0" max="100" pattern="{0-9}*" id="malbec" name="malbec">
+            <input type="range"  min="0" max="100" pattern="{0-9}*" id="malbec" name="malbec">
             <label for="champaigne">Quantity of Champaigne</label>
-            <input type="number"  min="0" max="100" pattern="{0-9}*" id="champaigne" name="champaigne">
+            <input type="range"  min="0" max="100" pattern="{0-9}*" id="champaigne" name="champaigne">
+            <section class="nowrap">
+                <input type="checkbox" value="Gift" name="gift" id="gift">
+                <label for="gift">This is a gift</label>
+            </section>
         </fieldset>
 
         <fieldset>
             <legend>Shipping Details</legend>
+            <section class="nowrap">
+                <input type="radio" value="standard" name="shippingtype" id="standard">
+                <label for="standard">Standard Shipping ($5)</label>
+            </section>
+            <section class="nowrap">
+                <input type="radio" value="dhl" name="shippingtype" id="dhl">
+                <label for="dhl">DHL Shipping ($20)</label>
+            </section>
             <label for="street">Street </label>
             <input id="street" placeholder="Enter Your Street Name" type="text" pattern="{0-9}*" name="street">
             <label for="streetnumber">Street Number</label>
             <input id="streetnumber" placeholder="Enter Your Street Number" type="number" pattern="{0-9}*" name="streetnumber">
             <label for="time">Preferred Receiving Time</label>
             <input type="time" name="time" id="time">
+
+            <label for="comments">Comments</label>
+            <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
         </fieldset>
             <input  type="submit" value="order">
         

@@ -25,10 +25,21 @@ fieldset{
     margin-bottom: 30px;
     background-color: #ddd;
 }
+textarea{
+    width: 90%;
+    height: 150px;
+}
 input[type=submit]{
     font-size: large;
     width: 100%;
     padding: 15px;
     background-color: yellow;
     margin-top: 5px;
+}
+.nowrap label, .nowrap input {
+    display: inline;
+    width: auto;
+} 
+.nowrap input:optional{
+    border: 0;
 }
