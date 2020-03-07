@@ -78,7 +78,7 @@ h1 {
     float: left;
     padding: 5px;
     margin-top: 5px;
-    animation: animation-subtitle, 2s;
+    animation: animation-subtitle 8s;
     animation-iteration-count: infinite;
     animation-fill-mode: both;
 }
