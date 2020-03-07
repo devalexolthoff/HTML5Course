@@ -25,11 +25,16 @@ main {
 }
 .over{
     background-color: yellow;
+    transform: scale(1.5) translateY(100px);
 }
 
 #logo {
     float:right;
     margin: 0;
+    transition: transform 0.5s;
+}
+.upsidedown {
+   transform: rotate(180deg);
 }
 
 h1, #subtitle {
