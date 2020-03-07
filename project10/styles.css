@@ -21,7 +21,7 @@ main {
     height: 100px;
     width: 340px;
     margin: auto;
-    transition: all 3ss;
+    /* transition: all 3ss; */
 }
 .over{
     background-color: yellow;
@@ -32,6 +32,8 @@ main {
     float:right;
     margin: 0;
     transition: transform 0.5s;
+    animation: animation-logo 4s;
+    animation-iteration-count: infinite;
 }
 .upsidedown {
    transform: rotate(180deg);
@@ -44,6 +46,30 @@ h1, #subtitle {
 h1 {
     margin-top: 15px;
     font-size: 1.2em;
+    animation: animation-title 4s;
+    animation-delay: 1s;
+}
+@keyframes animation-title {
+    25%{
+        transform: translate(-500px, -500px);
+    }
+    50% {
+        opacity: 0;
+        color: red;
+    }
+    75% {
+        color: green;
+        transform: scale(1);
+    }
+}
+@keyframes animation-logo {
+    50% {
+        transform: rotate(180deg) scale(0.8);
+        opacity: 1;
+    } 
+    60% {
+        opacity: 0;
+    }
 }
 
 #subtitle {
@@ -52,4 +78,15 @@ h1 {
     float: left;
     padding: 5px;
     margin-top: 5px;
+    animation: animation-subtitle, 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+@keyframes animation-subtitle {
+    35%{
+        background-color: green;
+    }
+    75% {
+        background-color: blue;
+    }
 }
